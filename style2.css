@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    background-color: white;
+}
+.navigation{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    width: 50%;
+}
+.logo{
+    margin-left: 100px;
+    margin-top: 1em;
+}
+.navigation a{
+    text-decoration: none;
+    color: black;
+    font-weight: thin;
+    font-size: 1.5em;
+    transition:  0.4s ease-in-out;
+}
+
+.navigation a:hover{
+    color: hsla(168, 5%, 20%, 0.2);
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    position: relative;
+    display: inline-block;
+    margin: 4em auto;
+}
+.slider video{
+    width: 70%;
+    display: none;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.slider p{
+    display: none;
+}
+video.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+p.displaySlide{
+    display: block;
+    font-size: 2em;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navigation button {
+    font-size: 3rem;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.container .navigation{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    width: 20%;
+    background-color: rgb(127, 229, 255);
+    border-radius: 10px;
+    font-size: 2em;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+} 

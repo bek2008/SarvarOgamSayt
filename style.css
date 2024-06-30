@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Monaco", sans-serif;
+}
+*:before, *:after{
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(1deg, rgb(31, 172, 228), rgb(155, 163, 163));
+}
+
+.title{
+    width: 100%;
+    font: 500;
+    padding: 30px;
+    text-align: center;
+    background-color: aliceblue;
+    margin-top: 80px;
+}
+
+.container{
+    width: 1600px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+
+.slide{
+    display: inline-block;
+    flex-direction: column;
+    background-color: hsla(229, 36%, 82%, 0.6);
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    justify-content: center;
+}
+.slide:hover{
+    background-color: hsla(229, 36%, 82%, 0.301);
+    box-shadow: 10px 10px 10px;
+}
+.flex-videos{
+    display: flex;
+    padding: 10px;
+    gap: 1em;
+    justify-content: center;
+}
+
+.inner-column{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.inner-column .slide{
+    margin: 1em auto;
+}
+.video{
+    width: 600px;
+    height: 300px;
+    margin: 15px auto;
+}
+
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    background-color: white;
+    position: fixed;
+}
+.navigation{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    width: 50%;
+}
+.logo{
+    margin-left: 100px;
+    margin-top: 1em;
+}
+.navigation a{
+    text-decoration: none;
+    color: black;
+    font-weight: thin;
+    font-size: 1.5em;
+    transition:  0.4s ease-in-out;
+}
+
+.navigation a:hover{
+    color: hsla(168, 5%, 20%, 0.2);
+}
+.intro-presentation{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: rgb(118, 169, 214);
+    border-radius: 20px;
+}
+.main-page{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.third-page{
+    margin: 2em auto;
+    width: 80%;
+    background-color: aliceblue;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.third-page p{
+    font-size: 1.5rem;
+}
+
+.logoImg{
+    margin-top: 100px;
+    width: 80%;
+}
+
+.intro-presentation p{ 
+    font-size: 1.5em;
+    margin-left: 30px;
+}
+.icons a{
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+}
+.icons i{
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+.icons i:hover{
+    transform: scale(1.2);
+    color: hsla(168, 5%, 20%, 0.2);
+}
+.fourth-page{
+    margin: 2em auto;
+    width: 80%;
+    background-color: aliceblue;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px auto;
+    
+}
+.Kurs{
+    width: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 3px 3px 1px hsla(0, 0%, 50%, 0.9);
+    transition: 0.3s ease-out;
+}
+.Kurs:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 7px 7px 5px gray;
+}
+.courceName{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 40px;
+    gap: 50px;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    margin: 40px;
+    gap: 50px;
+}
+.links i{
+    font-weight: lighter;
+    margin-bottom: 8px;
+    font-size: 3em;
+}
+.links a{
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+
+
+.footer{
+    width: 100%;
+    padding-top: 2rem;
+}
+.inner-footer h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+.inner-footer{
+    gap: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
